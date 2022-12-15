@@ -8,7 +8,7 @@ Easyone has more than 1500 active customers on the national territory.
 
 Exploiting this vulnerability allows a remote attacker to obtain control of the database. RCE is not guaranteed, depends on the privileges and capabilities of the user running the dbms. 
 
-Vulnerable version: 5.50.02
+Tested Vulnerable version: 5.50.02
 
 Patched version: 5.50.02.03
 
