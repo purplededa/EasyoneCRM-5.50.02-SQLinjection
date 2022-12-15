@@ -12,7 +12,7 @@ Vulnerable version: 5.50.02
 
 Patched version: 5.50.02.03
 
-# Timeline
+## Timeline
 - 30/08/2022 - Contacted Easyone IT department via e-mail regarding the vulnerability
 - 05/09/2022 - Contacted Easyone IT department via telephone regarding availability slot to discuss the vulnerability
 - 19/09/2022 - Call with Easyone IT department - vulnerability explained and recognized by Easyone IT department
