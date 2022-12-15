@@ -29,7 +29,7 @@ Patched version: 5.50.02.03
 
 
 ## Execution
-- Vulnerable *text* parameter via GET: domain.com/Services/Misc.asmx/SearchTag?text=SQLI 
+- Vulnerable **text** parameter via GET: domain.com/Services/Misc.asmx/SearchTag?text=SQLI 
 
 - PoC via sqlmap: 
 ```
