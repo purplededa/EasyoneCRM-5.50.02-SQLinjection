@@ -6,7 +6,7 @@ Easyone developed integration with the most popular management systems on the It
 
 Easyone has more than 1500 active customers on the national territory.
 
-Exploiting this vulnerability allows a remote attacker to obtain control of the database. RCE is not guaranteed, depends on the privileges and capabilities of the user running the dbms. 
+Exploiting this vulnerability allows an unauthenticated remote attacker to obtain control of the database. RCE is not guaranteed, depends on the privileges and capabilities of the user running the dbms. 
 
 Tested Vulnerable version: 5.50.02
 
