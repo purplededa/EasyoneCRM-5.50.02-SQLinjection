@@ -39,7 +39,6 @@ Patched version: 5.50.02.03
 ## Execution
 - Vulnerable **text** parameter via GET: domain.com/Services/Misc.asmx/SearchTag?text=SQLI 
 
-## Automated PoC currently in development
 
 # Authors
 Luca Bernardi, Davide Bianchin, Fortunato [fox] Lodari @ Deda Cloud Cybersecurity Team
