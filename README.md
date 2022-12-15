@@ -6,8 +6,16 @@ Easyone developed integration with the most popular management systems on the It
 
 Easyone has more than 1500 active customers on the national territory.
 
-Exploiting this vulnerability allows an unauthenticated remote attacker to obtain control of the database. RCE is not guaranteed, depends on the privileges and capabilities of the user running the dbms. 
 
+## Description
+
+The vulnerability allows a remote attacker to execute arbitrary SQL queries in database.
+
+The vulnerability exists due to insufficient sanitization of user-supplied data. A remote non-authenticated attacker can send a specially crafted request to the affected application and execute arbitrary SQL commands within the application database.
+
+Successful exploitation of this vulnerability may allow a remote attacker to read, delete, modify data in database and gain complete control over the affected application.
+
+## Versions 
 Tested Vulnerable version: 5.50.02
 
 Patched version: 5.50.02.03
