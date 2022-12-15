@@ -39,9 +39,6 @@ Patched version: 5.50.02.03
 ## Execution
 - Vulnerable **text** parameter via GET: domain.com/Services/Misc.asmx/SearchTag?text=SQLI 
 
-## Screenshots
-![Immagine 2022-12-15 184659](https://user-images.githubusercontent.com/119488062/207931523-f5db2479-9bc2-429a-ab24-96ea6ee33919.png)
-
 ## Automated PoC currently in development
 
 # Authors
