@@ -1,19 +1,19 @@
 # EasyoneCRM-5.50.02-SQLinjection
-Easyone One is an Italian CRM company with 14 years of experience with a mission: to organize the sales processes of companies, in an increasingly complex and competitive market, through the digitization of processes from the most important and strategic activity: the relationship with the customer.
-Easyone is not a CRM vendor, it produce and develop directly CRM for the Italian market.
+Easyone One is an Italian CRM company with 14 years of experience with a mission: to organize the sales process of companies, in an increasingly complex and competitive market, through the digitization of one of the most important and strategic activities: the relationship with the customer.
+Easyone is not a CRM vendor, the company directly produces and develops its own CRM solution for the Italian market.
 
-Easyone developed integration with the most popular management systems on the Italian market: Alyante and Team System Metodo; SageX3, Galileo by San Marco Informatica, Arca by Wolters Kluver, Business by NTS, MecSal by Passpartout and more.
+Easyone developed integration with the most popular management systems on the Italian market: Alyante and Team System Metodo; SageX3, Galileo by San Marco Informatica, Arca by Wolters Kluwer Italia, Business by NTS, MecSal by Passpartout and more.
 
-Easyone has more than 1500 active customers on the national territory.
+Easyone has more than 1500 active customers in Italy.
 
 
 ## Description
 
-The vulnerability allows a remote attacker to execute arbitrary SQL queries in database.
+The vulnerability allows a remote attacker to execute arbitrary SQL queries on a database.
 
 The vulnerability exists due to insufficient sanitization of user-supplied data. A remote non-authenticated attacker can send a specially crafted request to the affected application and execute arbitrary SQL commands within the application database.
 
-Successful exploitation of this vulnerability may allow a remote attacker to read, delete, modify data in database and gain complete control over the affected application.
+Successful exploitation of this vulnerability may allow a remote attacker to read, delete, modify data in the database and gain complete control over the affected application.
 
 ## Versions 
 Tested Vulnerable version: 5.50.02
